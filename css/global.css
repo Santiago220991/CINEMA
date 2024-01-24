@@ -14,7 +14,6 @@ header {
 header > nav {
     display: grid;
     grid-template-columns: 25% 50% 25%;
-    width: 100%;
     height: auto;
     padding: 5px;
     place-items: center;
@@ -82,6 +81,9 @@ div.banner {
     height: 400px;
     background-image: url("../resources/images/banner.jpg");
     align-items: end;
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 button.more-information {
@@ -130,7 +132,6 @@ div.filter div select {
 
 /* movies */
 h1 {
-    width: 100%;
     padding-left: 9%;
     font-size: xx-large;
     color: #808080;
