@@ -79,8 +79,8 @@
     const createMetaDataElement = (metadata) => {
         const container=document.createElement("div")
         container.className = "metadata-element"
-        
-        const metaDataTitle=document.createElement("p")
+
+        const metaDataTitle=document.createElement("strong")
         metaDataTitle.textContent=metadata.title 
         container.appendChild(metaDataTitle)
 
@@ -91,14 +91,17 @@
     }
 
      get_movie("tt0055254").then((movie)=>{
-        console.log(movie)
         const duration = secondsToHHMM(movie.runtime.seconds)
         const genres = arrayToString(movie.genres.genres)
         const container = document.createElement("div")
                 container.className = "movie-details-container"
 
+                const imageContainer = document.createElement("div")
+                imageContainer.className = "image-container"
+                container.appendChild(imageContainer)
+                
                 const imgElement = createImag(movie)
-                container.appendChild(imgElement)
+                imageContainer.appendChild(imgElement)
 
                 const metaDataContainer = document.createElement("div")
                 metaDataContainer.className= "metada-data-container"
