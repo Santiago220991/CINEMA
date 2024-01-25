@@ -168,6 +168,35 @@ div.movie-list div.poster-container button{
     border-color: darkred;
 }
 
+/*movie-details */
+div.movie-details-container {
+    display: flex;
+    padding: 5% 3% 5% 3%;
+    margin: 2% 5% 2% 5% ;
+    column-gap: 3%;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+div.movie-details-container img {
+    width: 30%;
+}
+
+div.movie-details-container div.metadata-element {
+    border-bottom: 2px lightgray dashed;
+    margin-top: 5%;
+    display: flex;
+    flex-direction: column;
+
+}
+
+div.movie-details-container div.metadata-element:last-child {
+    border-bottom: none;
+
+}
+
+div.movie-details-container div.metadata-element:first-child {
+    margin-top: 0;
+}
 
 /* footer */
 footer {
